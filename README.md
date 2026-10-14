@@ -1,4 +1,4 @@
-# Aseptia — conceptual GMP layout landing
+# LayoutGMP — conceptual GMP layout landing
 
 Spanish-first site for a service that prepares conceptual GMP plant layouts: options drafted with IA, expert review, 2D plans, and an interactive 3D model.
 
@@ -8,12 +8,12 @@ Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and react-three-fi
 
 Edit `config/site.ts`:
 
-- `BRAND_NAME` — `Aseptia`. This is the only place the visible name is defined.
-- `siteUrl` — `https://aseptia.ai`. Canonical URLs, metadata, Open Graph, the sitemap, and JSON-LD use this origin.
+- `BRAND_NAME` — `LayoutGMP`. This is the only place the visible name is defined.
+- `siteUrl` — `https://layoutgmp.com`. Canonical URLs, metadata, Open Graph, the sitemap, and JSON-LD use this origin.
 - `PRICE_FROM_LABEL` — currently `Desde USD X`.
 - `OWNER_NAME` — Alejandro Pacheco.
 
-Spanish copy says **IA**. The English toggle says **AI**. `plantagmp.com` is not a canonical host in this app; it is expected to redirect to `https://aseptia.ai` later.
+Spanish copy says **IA**. The English toggle says **AI**. `plantagmp.com` is not a canonical host in this app; it is expected to redirect to `https://layoutgmp.com` later.
 
 ## Setup
 
@@ -79,4 +79,4 @@ It does not claim client logos, testimonials, user counts, BIM export, an API, H
 
 ## Deploy
 
-This repository is ready to import on Vercel and attach to `aseptia.ai`. Set the environment variables in that project before inviting real briefs. Canonical metadata already points at `https://aseptia.ai`. Production promotion is a separate decision from opening a preview. `plantagmp.com` should redirect to that origin when the DNS move happens; this app does not serve that redirect.
+This repository is ready to import on Vercel and attach to `layoutgmp.com`. Set the environment variables in that project before inviting real briefs. Canonical metadata already points at `https://layoutgmp.com`. Production promotion is a separate decision from opening a preview. `plantagmp.com` should redirect to that origin when the DNS move happens; this app does not serve that redirect.

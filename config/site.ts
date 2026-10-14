@@ -4,7 +4,7 @@
  * plantagmp.com is not this origin; it is expected to redirect here later.
  */
 
-export const BRAND_NAME = "Aseptia";
+export const BRAND_NAME = "LayoutGMP";
 
 /** Public price placeholder. The figure is intentionally not decided. */
 export const PRICE_FROM_LABEL = "Desde USD X";
@@ -12,7 +12,7 @@ export const PRICE_FROM_LABEL = "Desde USD X";
 export const OWNER_NAME = "Alejandro Pacheco";
 
 /** Canonical origin for metadata, Open Graph, sitemap, and JSON-LD. */
-export const siteUrl = "https://aseptia.ai";
+export const siteUrl = "https://layoutgmp.com";
 
 function readHttpUrl(raw: string | undefined): string {
   const value = raw?.trim() || "";
