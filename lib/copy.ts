@@ -9,7 +9,23 @@ const es = {
     sample: "Ejemplo",
     faq: "FAQ",
     brief: "Enviar brief",
+    scenario: "Escenario",
     menu: "Menú",
+  },
+  scenario: {
+    eyebrow: "Escenario de software",
+    title: "Un escenario disponible: sólidos orales",
+    body: "La herramienta genera el layout conceptual de una planta de comprimidos recubiertos a 1.000.000 unidades al mes. El pago se hace en Hotmart. El plano lleva la leyenda «Layout conceptual, requiere revisión experta» y no sustituye el encargo de tres variantes en 5 días.",
+    points: [
+      "Forma fija: comprimido con recubrimiento pelicular",
+      "Capacidad fija: 1.000.000 comprimidos/mes",
+      "Vía húmeda o compresión directa, turnos y peso dentro de un rango",
+      "Grado D / ISO 8 en proceso. Fuera de eso, la respuesta es v2",
+    ],
+    buy: "Comprar este escenario",
+    buyUnavailable: "El enlace de pago de Hotmart todavía no está publicado.",
+    open: "Abrir la herramienta",
+    priceNote: "El precio de este escenario se muestra en la página de pago.",
   },
   schedule: {
     label: "Agendar llamada",
@@ -244,7 +260,7 @@ const es = {
     sections: [
       {
         title: "Qué datos",
-        body: "Empresa, nombre de contacto, email, país, tipo de producto o proceso, área, clases ISO objetivo, plazo, notas, y el archivo o enlace si lo adjunta. También se guarda el idioma de la página, la hora del envío y que aceptó esta información.",
+        body: "Empresa, nombre de contacto, email, país, tipo de producto o proceso, área, clases ISO objetivo, plazo, notas, y el archivo o enlace si lo adjunta. También se guarda el idioma de la página, la hora del envío y que aceptó esta información. Si compra el escenario de sólidos orales, también se guardan el email de la compra y los parámetros del layout generado.",
       },
       {
         title: "Para qué",
@@ -283,7 +299,23 @@ const en: typeof es = {
     sample: "Example",
     faq: "FAQ",
     brief: "Send brief",
+    scenario: "Scenario",
     menu: "Menu",
+  },
+  scenario: {
+    eyebrow: "Software scenario",
+    title: "One scenario available: oral solids",
+    body: "The tool generates the conceptual layout of a film-coated tablet plant at 1,000,000 units a month. Payment is on Hotmart. The plan is labeled “Layout conceptual, requiere revisión experta” and does not replace the five-day, three-option engagement.",
+    points: [
+      "Fixed form: film-coated tablet",
+      "Fixed capacity: 1,000,000 tablets/month",
+      "Wet granulation or direct compression, shifts and weight inside a range",
+      "Grade D / ISO 8 in process rooms. Anything else returns a v2 message",
+    ],
+    buy: "Buy this scenario",
+    buyUnavailable: "The Hotmart checkout link is not published yet.",
+    open: "Open the tool",
+    priceNote: "The price of this scenario is shown on the checkout page.",
   },
   schedule: {
     label: "Book a call",
@@ -518,7 +550,7 @@ const en: typeof es = {
     sections: [
       {
         title: "Which data",
-        body: "Company, contact name, email, country, product type or process, area, target ISO classes, timeline, notes, and the file or link if you attach one. The page language, the time of submission, and the fact that you accepted this notice are stored as well.",
+        body: "Company, contact name, email, country, product type or process, area, target ISO classes, timeline, notes, and the file or link if you attach one. The page language, the time of submission, and the fact that you accepted this notice are stored as well. If you buy the oral solid dosage scenario, the purchase email and the generated layout inputs are stored too.",
       },
       {
         title: "Why",

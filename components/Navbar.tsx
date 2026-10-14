@@ -9,6 +9,7 @@ import { BRAND_NAME } from "@/config/site";
 import { useLocale } from "@/lib/locale";
 
 const links = [
+  { href: "/#escenario", key: "scenario" },
   { href: "/#problema", key: "problem" },
   { href: "/#metodo", key: "method" },
   { href: "/#entregable", key: "deliverable" },

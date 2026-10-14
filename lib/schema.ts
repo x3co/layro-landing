@@ -22,3 +22,33 @@ CREATE TABLE IF NOT EXISTS briefs (
 
 CREATE INDEX IF NOT EXISTS briefs_created_at_idx ON briefs (created_at DESC);
 `;
+
+/** Orders and generated layouts. Keep in sync with db/schema.sql. */
+export const OSD_SCHEMA_SQL = `
+CREATE TABLE IF NOT EXISTS orders (
+  id UUID PRIMARY KEY,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  email TEXT NOT NULL,
+  status TEXT NOT NULL,
+  source TEXT NOT NULL,
+  external_id TEXT,
+  access_token TEXT NOT NULL UNIQUE,
+  raw_event JSONB
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS orders_source_external_idx
+  ON orders (source, external_id)
+  WHERE external_id IS NOT NULL;
+
+CREATE INDEX IF NOT EXISTS orders_email_idx ON orders (lower(email));
+
+CREATE TABLE IF NOT EXISTS layouts (
+  id UUID PRIMARY KEY,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  order_id UUID NOT NULL REFERENCES orders(id),
+  inputs JSONB NOT NULL,
+  result JSONB NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS layouts_order_idx ON layouts (order_id, created_at DESC);
+`;

@@ -33,10 +33,13 @@ The page is Spanish by default. The header switches copy to English in the brows
 | --- | --- | --- |
 | `NEXT_PUBLIC_CALENDAR_URL` | No | HTTPS link for **Agendar llamada**. If empty, the button is visible and disabled. |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | No | Address on the privacy page. If empty, people are told to use the brief form. |
-| `DATABASE_URL` | One storage path | Postgres connection string. Preferred store for brief submissions. |
-| `RESEND_API_KEY` | Only without Postgres | Resend API key. |
-| `RESEND_FROM_EMAIL` | Only without Postgres | Verified sender, for example `Briefs <briefs@your-domain.com>`. |
-| `BRIEF_NOTIFY_EMAIL` | Only without Postgres | Inbox that receives the brief. |
+| `DATABASE_URL` | For briefs, or to sell the scenario | Postgres connection string. Preferred store for brief submissions. Required for orders and generated layouts; a purchase is not stored any other way. |
+| `RESEND_API_KEY` | Only without Postgres, briefs only | Resend API key. |
+| `RESEND_FROM_EMAIL` | Only without Postgres, briefs only | Verified sender, for example `Briefs <briefs@your-domain.com>`. |
+| `BRIEF_NOTIFY_EMAIL` | Only without Postgres, briefs only | Inbox that receives the brief. |
+| `NEXT_PUBLIC_HOTMART_CHECKOUT_URL` | No | Hotmart checkout for the oral solid dosage scenario. If empty, the buy button is visible and disabled. |
+| `HOTMART_WEBHOOK_TOKEN` | For the webhook | Compared with `X-HOTMART-HOTTOK` or the `hottok` field. If unset, `POST /api/webhooks/hotmart` returns 503. |
+| `ADMIN_TOKEN` | For manual payment | `POST /api/admin/mark-paid` with `Authorization: Bearer` or JSON `adminToken`. If unset, the route returns 503. |
 
 Storage rules:
 
@@ -54,7 +57,7 @@ With `DATABASE_URL` set, the first successful configuration creates the table it
 psql "$DATABASE_URL" -f db/schema.sql
 ```
 
-The table is `briefs`. Optional file uploads (PDF, PNG, JPG, WEBP, max 5 MB) are stored in `file_bytes`. A link can be sent instead of a file.
+The brief table is `briefs`. Optional file uploads (PDF, PNG, JPG, WEBP, max 5 MB) are stored in `file_bytes`. A link can be sent instead of a file. The same script creates `orders` and `layouts` for the oral solid dosage scenario. The order routes also run that SQL on first use, even if the briefs table was created earlier.
 
 Hosted Postgres (Neon, Supabase, RDS) should use TLS. Local Postgres does not:
 
@@ -62,10 +65,32 @@ Hosted Postgres (Neon, Supabase, RDS) should use TLS. Local Postgres does not:
 DATABASE_URL=postgresql://postgres:postgres@localhost:5432/briefs
 ```
 
+## Oral solid dosage scenario
+
+One software scenario: a film-coated tablet plant at exactly 1,000,000 tablets per month. The landing section `#escenario` links to Hotmart and to `/app`. After a paid order exists, `/app` takes the short input form, runs the deterministic engine in `lib/osd/generate.ts`, and shows the plan in 2D and in the existing 3D viewer. Exports are PDF, PNG, and JSON. Every output is labeled **Layout conceptual, requiere revisión experta**.
+
+Assumptions (batch size, cycle times, pressures, room rectangles) are in `lib/osd/assumptions.ts`. The Spanish write-up is `docs/MVP_OSD_1M.md`.
+
+Purchase storage:
+
+1. Hotmart `POST /api/webhooks/hotmart` with a matching token creates a paid order on `PURCHASE_APPROVED`, `PURCHASE_COMPLETE`, or `approved`. Other events return 200 and are ignored. The same transaction id does not create a second order.
+2. `POST /api/admin/mark-paid` does the same for a typed email during tests and returns `/app?token=…`.
+3. Opening that link, or posting the purchase email to `POST /api/access`, sets an httpOnly cookie `lgmp_access` (30 days). Knowing the purchase email is enough in this version.
+4. `POST /api/layouts` generates and stores the layout for that order. Inputs outside the scenario return 422 and a message that starts with `Fuera de alcance de esta versión (v2):`.
+
+The public 3D model on the landing page stays the invented filling-suite example. It is not this plant.
+
+```bash
+npm test
+```
+
+`npm test` generates the default layout and checks scope rejections. It does not need Postgres.
+
 ## Scripts
 
 ```bash
 npm run dev
+npm test
 npm run lint
 npm run build
 npm start

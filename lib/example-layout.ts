@@ -1,4 +1,4 @@
-export type IsoClass = "ISO 5" | "ISO 7" | "ISO 8";
+export type IsoClass = "ISO 5" | "ISO 7" | "ISO 8" | "CNC";
 export type Edge = "n" | "s" | "e" | "w";
 
 export type Door = {
@@ -15,6 +15,8 @@ export type Room = {
   shortEs: string;
   shortEn: string;
   iso: IsoClass;
+  /** Short grade tag drawn in the 3D view. Example rooms keep using `iso`. */
+  badge?: string;
   x: number;
   z: number;
   w: number;
@@ -22,7 +24,7 @@ export type Room = {
   doors: Door[];
 };
 
-export type FlowId = "personnel" | "material";
+export type FlowId = "personnel" | "material" | "waste";
 
 export type Flow = {
   id: string;
@@ -39,11 +41,13 @@ export const ISO_COLORS: Record<IsoClass, string> = {
   "ISO 5": "#0F766E",
   "ISO 7": "#1D4ED8",
   "ISO 8": "#475569",
+  CNC: "#78716C",
 };
 
 export const FLOW_COLORS: Record<FlowId, string> = {
   personnel: "#22D3EE",
   material: "#FBBF24",
+  waste: "#F43F5E",
 };
 
 /**
@@ -307,6 +311,22 @@ export function buildWalls(rooms: Room[]): WallMesh[] {
 }
 
 export const EXAMPLE_WALLS = buildWalls(EXAMPLE_ROOMS);
+
+export type LayoutModel = {
+  rooms: Room[];
+  walls: WallMesh[];
+  flows: Flow[];
+  building: { width: number; depth: number };
+  center: [number, number, number];
+};
+
+export const EXAMPLE_MODEL: LayoutModel = {
+  rooms: EXAMPLE_ROOMS,
+  walls: EXAMPLE_WALLS,
+  flows: EXAMPLE_FLOWS,
+  building: BUILDING,
+  center: BUILDING_CENTER,
+};
 
 export function roomLabel(room: Room, locale: "es" | "en") {
   return locale === "en" ? room.nameEn : room.nameEs;
