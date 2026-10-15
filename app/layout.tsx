@@ -24,7 +24,7 @@ const mono = JetBrains_Mono({
 });
 
 const description =
-  "Layouts conceptuales GMP: tres variantes, zonificación ISO 14644 y Anexo 1, flujos de personal y material, y un modelo 3D interactivo revisado por un experto. España y Latinoamérica.";
+  "Layouts conceptuales GMP: tres variantes, zonificación ISO 14644 y Anexo 1, flujos de personal y material, y un modelo 3D interactivo revisado por un ingeniero senior GMP. España y Latinoamérica.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -34,7 +34,6 @@ export const metadata: Metadata = {
   },
   description,
   applicationName: BRAND_NAME,
-  authors: [{ name: "Alejandro Pacheco" }],
   alternates: { canonical: "/" },
   openGraph: {
     title: `${BRAND_NAME} — Layout conceptual GMP`,

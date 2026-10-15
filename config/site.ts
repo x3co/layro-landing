@@ -9,8 +9,6 @@ export const BRAND_NAME = "LayoutGMP";
 /** Public price placeholder. The figure is intentionally not decided. */
 export const PRICE_FROM_LABEL = "Desde USD X";
 
-export const OWNER_NAME = "Alejandro Pacheco";
-
 /** Canonical origin for metadata, Open Graph, sitemap, and JSON-LD. */
 export const siteUrl = "https://layoutgmp.com";
 

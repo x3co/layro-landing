@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { OWNER_NAME } from "@/config/site";
 import { Logo } from "@/components/ui/Logo";
 import { useLocale } from "@/lib/locale";
 
@@ -14,7 +13,6 @@ export function Footer() {
         <div className="max-w-md">
           <Logo />
           <p className="mt-3 text-sm leading-6 text-slate-600">{text(t.footer.blurb)}</p>
-          <p className="mt-2 text-sm text-slate-500">{OWNER_NAME}</p>
         </div>
         <div className="flex flex-col gap-2 text-sm text-slate-600">
           <a href="/#modelo" className="hover:text-ink">
