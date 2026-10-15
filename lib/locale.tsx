@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
-import { BRAND_NAME, OWNER_NAME, PRICE_FROM_LABEL, contactEmail } from "@/config/site";
+import { BRAND_NAME, PRICE_FROM_LABEL, contactEmail } from "@/config/site";
 import { copy, type Copy, type Locale } from "@/lib/copy";
 
 const STORAGE_KEY = "site-locale";
@@ -56,7 +56,6 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
   const value = useMemo<LocaleContextValue>(() => {
     const vars = {
       brand: BRAND_NAME,
-      owner: OWNER_NAME,
       email: contactEmail,
       price: PRICE_FROM_LABEL,
     };

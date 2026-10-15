@@ -34,8 +34,8 @@ const es = {
   hero: {
     eyebrow: "Layouts conceptuales GMP · España y Latinoamérica",
     title: "Layout conceptual GMP en 5 días",
-    lead: "Tres variantes, zonificación ISO 14644 y Anexo 1, flujos de personal y material, modelo 3D interactivo, revisado por un experto.",
-    body: "Para laboratorios farmacéuticos y biotecnológicos, CDMO y equipos de cosmética o suplementos que están ordenando una planta GMP. La IA propone variantes a partir del brief. {owner} las revisa antes de entregarlas.",
+    lead: "Tres variantes, zonificación ISO 14644 y Anexo 1, flujos de personal y material, modelo 3D interactivo, revisado por un ingeniero senior GMP.",
+    body: "Para laboratorios farmacéuticos y biotecnológicos, CDMO y equipos de cosmética o suplementos que están ordenando una planta GMP. La IA propone variantes a partir del brief. Un ingeniero senior GMP las revisa antes de entregarlas.",
     primary: "Enviar brief",
     tertiary: "Ver el modelo de ejemplo",
     cardTitle: "Qué incluye este encargo",
@@ -44,7 +44,7 @@ const es = {
       "Zonificación ISO 14644 / Anexo 1",
       "Flujos de personal y de material",
       "Plantas 2D y modelo 3D interactivo",
-      "Revisión de {owner}",
+      "Revisión de un ingeniero senior GMP",
     ],
     priceNote: "El importe todavía no está cerrado. Depende del área y del proceso.",
     audience: "No es un proyecto ejecutivo ni un software con sesión de usuario.",
@@ -83,7 +83,7 @@ const es = {
       },
       {
         title: "Revisión experta",
-        body: "{owner} revisa zonificación, esclusas y flujos, y corrige o descarta lo que no se sostiene.",
+        body: "Un ingeniero senior GMP revisa zonificación, esclusas y flujos, y corrige o descarta lo que no se sostiene.",
       },
       {
         title: "Entrega 2D y 3D",
@@ -119,7 +119,7 @@ const es = {
       },
       {
         title: "Notas de revisión",
-        body: "Comentarios de {owner} sobre lo que sostiene y lo que habría que cambiar en el proyecto de detalle.",
+        body: "Comentarios de un ingeniero senior GMP sobre lo que sostiene y lo que habría que cambiar en el proyecto de detalle.",
       },
     ],
     excludedTitle: "Qué no incluye",
@@ -185,7 +185,7 @@ const es = {
       },
       {
         q: "¿Quién revisa las variantes?",
-        a: "{owner}, como revisión de ingeniería farmacéutica. La IA prepara las variantes a partir del brief. La entrega no sale sin esa revisión, y puede corregir o descartar lo que la IA proponga.",
+        a: "Un ingeniero senior GMP revisa las variantes. La IA las prepara a partir del brief. La entrega no sale sin esa revisión, y puede corregir o descartar lo que la IA proponga.",
       },
       {
         q: "¿Para quién es?",
@@ -247,7 +247,7 @@ const es = {
     invalid: "La respuesta del servidor no se pudo leer. No asuma que el brief se guardó.",
   },
   footer: {
-    blurb: "{brand} prepara layouts conceptuales GMP, con variantes asistidas por IA y revisión de {owner}.",
+    blurb: "{brand} prepara layouts conceptuales GMP, con variantes asistidas por IA y revisión de un ingeniero senior GMP.",
     privacy: "Privacidad",
     scope: "España y Latinoamérica",
   },
@@ -256,7 +256,7 @@ const es = {
     title: "Datos del brief",
     updated: "Texto de esta página: octubre de 2026.",
     intro:
-      "{brand} recoge solo lo que usted envía para pedir un layout conceptual. El responsable es {owner}. Esta página no es un certificado de cumplimiento.",
+      "{brand} recoge solo lo que usted envía para pedir un layout conceptual. El responsable del tratamiento es el operador de {brand}. Esta página no es un certificado de cumplimiento.",
     sections: [
       {
         title: "Qué datos",
@@ -324,8 +324,8 @@ const en: typeof es = {
   hero: {
     eyebrow: "Conceptual GMP layouts · Spain and Latin America",
     title: "Conceptual GMP layout in 5 days",
-    lead: "Three options, ISO 14644 and Annex 1 zoning, personnel and material flows, an interactive 3D model, reviewed by an expert.",
-    body: "For pharmaceutical and biotech labs, CDMOs, and cosmetics or supplement teams putting a plant under GMP. AI drafts options from the brief. {owner} reviews them before delivery.",
+    lead: "Three options, ISO 14644 and Annex 1 zoning, personnel and material flows, an interactive 3D model, reviewed by a senior GMP engineer.",
+    body: "For pharmaceutical and biotech labs, CDMOs, and cosmetics or supplement teams putting a plant under GMP. AI drafts options from the brief. A senior GMP engineer reviews them before delivery.",
     primary: "Send a brief",
     tertiary: "View the example model",
     cardTitle: "What this engagement includes",
@@ -334,7 +334,7 @@ const en: typeof es = {
       "ISO 14644 / Annex 1 zoning",
       "Personnel and material flows",
       "2D plans and an interactive 3D model",
-      "Review by {owner}",
+      "Review by a senior GMP engineer",
     ],
     priceNote: "The figure is not final. It depends on area and process.",
     audience: "This is not a detailed engineering package and not a logged-in software product.",
@@ -373,7 +373,7 @@ const en: typeof es = {
       },
       {
         title: "Expert review",
-        body: "{owner} reviews zoning, airlocks, and flows, and corrects or discards what does not hold.",
+        body: "A senior GMP engineer reviews zoning, airlocks, and flows, and corrects or discards what does not hold.",
       },
       {
         title: "2D and 3D delivery",
@@ -409,7 +409,7 @@ const en: typeof es = {
       },
       {
         title: "Review notes",
-        body: "Comments from {owner} on what holds and what detailed design would still need to change.",
+        body: "Comments from a senior GMP engineer on what holds and what detailed design would still need to change.",
       },
     ],
     excludedTitle: "Not included",
@@ -475,7 +475,7 @@ const en: typeof es = {
       },
       {
         q: "Who reviews the options?",
-        a: "{owner} reviews them as a senior pharmaceutical engineering review. AI prepares the options from the brief. Delivery does not go out without that review, which can correct or discard what the AI proposes.",
+        a: "A senior GMP engineer reviews the options. AI prepares them from the brief. Delivery does not go out without that review, which can correct or discard what the AI proposes.",
       },
       {
         q: "Who is it for?",
@@ -537,7 +537,7 @@ const en: typeof es = {
     invalid: "The server response could not be read. Do not assume the brief was saved.",
   },
   footer: {
-    blurb: "{brand} prepares conceptual GMP layouts, with AI-assisted options and review by {owner}.",
+    blurb: "{brand} prepares conceptual GMP layouts, with AI-assisted options and review by a senior GMP engineer.",
     privacy: "Privacy",
     scope: "Spain and Latin America",
   },
@@ -546,7 +546,7 @@ const en: typeof es = {
     title: "Brief data",
     updated: "Text of this page: October 2026.",
     intro:
-      "{brand} collects only what you send to request a conceptual layout. The controller is {owner}. This page is not a compliance certificate.",
+      "{brand} collects only what you send to request a conceptual layout. The controller is the operator of {brand}. This page is not a compliance certificate.",
     sections: [
       {
         title: "Which data",

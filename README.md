@@ -11,7 +11,6 @@ Edit `config/site.ts`:
 - `BRAND_NAME` — `LayoutGMP`. This is the only place the visible name is defined.
 - `siteUrl` — `https://layoutgmp.com`. Canonical URLs, metadata, Open Graph, the sitemap, and JSON-LD use this origin.
 - `PRICE_FROM_LABEL` — currently `Desde USD X`.
-- `OWNER_NAME` — Alejandro Pacheco.
 
 Spanish copy says **IA**. The English toggle says **AI**. `plantagmp.com` is not a canonical host in this app; it is expected to redirect to `https://layoutgmp.com` later.
 
@@ -98,7 +97,7 @@ npm start
 
 ## What the page claims
 
-The offer is a conceptual GMP layout in about five days: three options, ISO 14644 / Annex 1 zoning, personnel and material flows, 2D plans, one interactive 3D model of the recommended option, and review by Alejandro Pacheco.
+The offer is a conceptual GMP layout in about five days: three options, ISO 14644 / Annex 1 zoning, personnel and material flows, 2D plans, one interactive 3D model of the recommended option, and review by a senior GMP engineer.
 
 It does not claim client logos, testimonials, user counts, BIM export, an API, HVAC design, qualification, or regulatory approval. The 3D viewer and the plan under it are labeled **Ejemplo**. They are an invented filling suite, not a client project.
 

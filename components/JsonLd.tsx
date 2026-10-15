@@ -1,4 +1,4 @@
-import { BRAND_NAME, OWNER_NAME, siteUrl } from "@/config/site";
+import { BRAND_NAME, siteUrl } from "@/config/site";
 
 export function JsonLd() {
   const data = {
@@ -10,8 +10,8 @@ export function JsonLd() {
       "Layouts conceptuales GMP con variantes asistidas por IA, revisión experta, planos 2D y modelo 3D interactivo.",
     url: siteUrl,
     provider: {
-      "@type": "Person",
-      name: OWNER_NAME,
+      "@type": "Organization",
+      name: BRAND_NAME,
     },
     brand: {
       "@type": "Brand",
