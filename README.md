@@ -1,6 +1,6 @@
 # LayoutGMP — conceptual GMP layout landing
 
-Spanish-first site for a service that prepares conceptual GMP plant layouts: options drafted with IA, expert review, 2D plans, and an interactive 3D model.
+Spanish-first site for a service that prepares conceptual GMP plant layouts: options drafted with IA, review by a team of experts, 2D plans, and an interactive 3D model.
 
 Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and react-three-fiber.
 
@@ -72,7 +72,7 @@ npm start
 
 ## What the page claims
 
-The offer is a conceptual GMP layout in about five days: three options, ISO 14644 / Annex 1 zoning, personnel and material flows, 2D plans, one interactive 3D model of the recommended option, and review by a senior GMP engineer.
+The offer is a conceptual GMP layout in about five days: three options, ISO 14644 / Annex 1 zoning, personnel and material flows, 2D plans, one interactive 3D model of the recommended option, and review by a team of senior engineers specialized in GMP.
 
 It does not claim client logos, testimonials, user counts, BIM export, an API, HVAC design, qualification, or regulatory approval. The 3D viewer and the plan under it are labeled **Ejemplo**. They are an invented filling suite, not a client project.
 
