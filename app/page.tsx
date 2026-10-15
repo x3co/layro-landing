@@ -9,6 +9,7 @@ import { Hero } from "@/components/sections/Hero";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Problem } from "@/components/sections/Problem";
 import { SampleDeliverable } from "@/components/sections/SampleDeliverable";
+import { Scenario } from "@/components/sections/Scenario";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <main id="contenido">
         <Hero />
+        <Scenario />
         <Problem />
         <HowItWorks />
         <Deliverables />

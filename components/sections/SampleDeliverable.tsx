@@ -15,6 +15,7 @@ import { useLocale } from "@/lib/locale";
 const PLAN_FLOW = {
   personnel: "#0E7490",
   material: "#B45309",
+  waste: "#BE123C",
 } as const;
 
 export function SampleDeliverable() {
@@ -42,6 +43,9 @@ export function SampleDeliverable() {
               </marker>
               <marker id="arrow-material" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
                 <path d="M0,0 L7,3.5 L0,7 Z" fill={PLAN_FLOW.material} />
+              </marker>
+              <marker id="arrow-waste" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+                <path d="M0,0 L7,3.5 L0,7 Z" fill={PLAN_FLOW.waste} />
               </marker>
             </defs>
             <rect x="-1.6" y="-0.6" width="33.2" height="13.6" rx="0.3" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="0.06" />

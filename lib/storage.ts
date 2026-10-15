@@ -77,6 +77,17 @@ function resendConfig() {
   };
 }
 
+export function requirePool() {
+  const connectionString = databaseUrl();
+  if (!connectionString) {
+    throw new StorageError(
+      "No hay base de datos. Defina DATABASE_URL para guardar pedidos y layouts.",
+      503,
+    );
+  }
+  return getPool(connectionString);
+}
+
 function getPool(connectionString: string) {
   if (!globalState.briefPool) {
     const local = /localhost|127\.0\.0\.1/.test(connectionString);

@@ -33,5 +33,8 @@ function readEmail(raw: string | undefined): string {
 /** External scheduling page for "Agendar llamada". Empty hides a working link. */
 export const calendarUrl = readHttpUrl(process.env.NEXT_PUBLIC_CALENDAR_URL);
 
+/** Hotmart checkout for the oral solid dosage scenario. Empty disables the buy button. */
+export const hotmartCheckoutUrl = readHttpUrl(process.env.NEXT_PUBLIC_HOTMART_CHECKOUT_URL);
+
 /** Optional address for privacy requests. */
 export const contactEmail = readEmail(process.env.NEXT_PUBLIC_CONTACT_EMAIL);
