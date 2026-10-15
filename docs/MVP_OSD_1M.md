@@ -2,7 +2,7 @@
 
 **Layout conceptual, requiere revisión experta.**
 
-Este documento describe el único escenario que genera el software. No es un diseño de HVAC, no es una calificación y no es una aprobación regulatoria. Las cifras viven en `lib/osd/assumptions.ts`. Si un experto las cambia, hay que volver a generar y revisar este texto.
+Este documento describe el único escenario que genera el software. No es un diseño de HVAC, no es una calificación y no es una aprobación regulatoria. Las cifras viven en `lib/osd/assumptions.ts`. Si el equipo de expertos las cambia, hay que volver a generar y revisar este texto.
 
 La leyenda de toda salida (pantalla, PDF, PNG y JSON) es exactamente: **Layout conceptual, requiere revisión experta**.
 
@@ -145,4 +145,4 @@ Los trazos son ortogonales. No hay una diagonal que cruce salas ajenas al recorr
 - El acceso de cliente se abre con el email de la compra o con el enlace que devuelve el marcado manual. No se envía ese enlace por correo.
 - Un aviso de Hotmart que no sea un pago aprobado se ignora (respuesta 200) para que Hotmart no reintente. Una anulación posterior no quita el pedido.
 - El modelo 3D de la portada sigue siendo el ejemplo inventado de una suite de llenado, marcado como ejemplo. El plano de este escenario solo aparece en `/app` después de generarlo.
-- La salida siempre pide revisión experta. No autoriza a construir.
+- La salida siempre pide revisión de un equipo de expertos. No autoriza a construir.

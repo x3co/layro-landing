@@ -27,7 +27,7 @@ export default function OpenGraphImage() {
             Layout conceptual GMP en 5 días
           </div>
           <div style={{ display: "flex", marginTop: 28, fontSize: 28, color: "#CBD5E1", maxWidth: 860 }}>
-            Tres variantes, zonificación ISO 14644 / Anexo 1, flujos y modelo 3D. Revisión experta.
+            Tres variantes, zonificación ISO 14644 / Anexo 1, flujos y modelo 3D. Revisión de un equipo de expertos.
           </div>
         </div>
         <div style={{ display: "flex", fontSize: 32 }}>{PRICE_FROM_LABEL}</div>

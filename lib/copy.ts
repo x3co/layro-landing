@@ -34,8 +34,8 @@ const es = {
   hero: {
     eyebrow: "Layouts conceptuales GMP · España y Latinoamérica",
     title: "Layout conceptual GMP en 5 días",
-    lead: "Tres variantes, zonificación ISO 14644 y Anexo 1, flujos de personal y material, modelo 3D interactivo, revisado por un ingeniero senior GMP.",
-    body: "Para laboratorios farmacéuticos y biotecnológicos, CDMO y equipos de cosmética o suplementos que están ordenando una planta GMP. La IA propone variantes a partir del brief. Un ingeniero senior GMP las revisa antes de entregarlas.",
+    lead: "Tres variantes, zonificación ISO 14644 y Anexo 1, flujos de personal y material, modelo 3D interactivo, revisado por un equipo de ingenieros senior especializados en GMP.",
+    body: "Para laboratorios farmacéuticos y biotecnológicos, CDMO y equipos de cosmética o suplementos que están ordenando una planta GMP. La IA propone variantes a partir del brief. Un equipo de ingenieros senior especializados en GMP las revisa antes de entregarlas.",
     primary: "Enviar brief",
     tertiary: "Ver el modelo de ejemplo",
     cardTitle: "Qué incluye este encargo",
@@ -44,7 +44,7 @@ const es = {
       "Zonificación ISO 14644 / Anexo 1",
       "Flujos de personal y de material",
       "Plantas 2D y modelo 3D interactivo",
-      "Revisión de un ingeniero senior GMP",
+      "Revisión de un equipo de ingenieros senior especializados en GMP",
     ],
     priceNote: "El importe todavía no está cerrado. Depende del área y del proceso.",
     audience: "No es un proyecto ejecutivo ni un software con sesión de usuario.",
@@ -82,8 +82,8 @@ const es = {
         body: "A partir del brief se preparan tres layouts conceptuales. Son alternativas para decidir, no un diseño cerrado.",
       },
       {
-        title: "Revisión experta",
-        body: "Un ingeniero senior GMP revisa zonificación, esclusas y flujos, y corrige o descarta lo que no se sostiene.",
+        title: "Revisión del equipo de expertos",
+        body: "Un equipo de ingenieros senior especializados en GMP revisa zonificación, esclusas y flujos, y corrige o descarta lo que no se sostiene.",
       },
       {
         title: "Entrega 2D y 3D",
@@ -119,7 +119,7 @@ const es = {
       },
       {
         title: "Notas de revisión",
-        body: "Comentarios de un ingeniero senior GMP sobre lo que sostiene y lo que habría que cambiar en el proyecto de detalle.",
+        body: "Comentarios de un equipo de ingenieros senior especializados en GMP sobre lo que sostiene y lo que habría que cambiar en el proyecto de detalle.",
       },
     ],
     excludedTitle: "Qué no incluye",
@@ -165,7 +165,7 @@ const es = {
       "Zonificación con clases ISO 14644 y criterio de Anexo 1",
       "Flujos de personal y de material",
       "Modelo 3D interactivo de la variante recomendada",
-      "Comentarios de la revisión experta",
+      "Comentarios del equipo de expertos",
     ],
     assumption:
       "Supuesto didáctico: suite de llenado. Las clases, las puertas y las flechas no corresponden a una planta existente.",
@@ -185,7 +185,7 @@ const es = {
       },
       {
         q: "¿Quién revisa las variantes?",
-        a: "Un ingeniero senior GMP revisa las variantes. La IA las prepara a partir del brief. La entrega no sale sin esa revisión, y puede corregir o descartar lo que la IA proponga.",
+        a: "Un equipo de ingenieros senior especializados en GMP revisa las variantes. La IA las prepara a partir del brief. La entrega no sale sin esa revisión, y puede corregir o descartar lo que la IA proponga.",
       },
       {
         q: "¿Para quién es?",
@@ -247,7 +247,7 @@ const es = {
     invalid: "La respuesta del servidor no se pudo leer. No asuma que el brief se guardó.",
   },
   footer: {
-    blurb: "{brand} prepara layouts conceptuales GMP, con variantes asistidas por IA y revisión de un ingeniero senior GMP.",
+    blurb: "{brand} prepara layouts conceptuales GMP, con variantes asistidas por IA y revisión de un equipo de ingenieros senior especializados en GMP.",
     privacy: "Privacidad",
     scope: "España y Latinoamérica",
   },
@@ -324,8 +324,8 @@ const en: typeof es = {
   hero: {
     eyebrow: "Conceptual GMP layouts · Spain and Latin America",
     title: "Conceptual GMP layout in 5 days",
-    lead: "Three options, ISO 14644 and Annex 1 zoning, personnel and material flows, an interactive 3D model, reviewed by a senior GMP engineer.",
-    body: "For pharmaceutical and biotech labs, CDMOs, and cosmetics or supplement teams putting a plant under GMP. AI drafts options from the brief. A senior GMP engineer reviews them before delivery.",
+    lead: "Three options, ISO 14644 and Annex 1 zoning, personnel and material flows, an interactive 3D model, reviewed by a team of senior engineers specialized in GMP.",
+    body: "For pharmaceutical and biotech labs, CDMOs, and cosmetics or supplement teams putting a plant under GMP. AI drafts options from the brief. A team of senior engineers specialized in GMP reviews them before delivery.",
     primary: "Send a brief",
     tertiary: "View the example model",
     cardTitle: "What this engagement includes",
@@ -334,7 +334,7 @@ const en: typeof es = {
       "ISO 14644 / Annex 1 zoning",
       "Personnel and material flows",
       "2D plans and an interactive 3D model",
-      "Review by a senior GMP engineer",
+      "Review by a team of senior engineers specialized in GMP",
     ],
     priceNote: "The figure is not final. It depends on area and process.",
     audience: "This is not a detailed engineering package and not a logged-in software product.",
@@ -372,8 +372,8 @@ const en: typeof es = {
         body: "Three conceptual layouts are prepared from the brief. They are alternatives to decide with, not a frozen design.",
       },
       {
-        title: "Expert review",
-        body: "A senior GMP engineer reviews zoning, airlocks, and flows, and corrects or discards what does not hold.",
+        title: "Review by a team of experts",
+        body: "A team of senior engineers specialized in GMP reviews zoning, airlocks, and flows, and corrects or discards what does not hold.",
       },
       {
         title: "2D and 3D delivery",
@@ -409,7 +409,7 @@ const en: typeof es = {
       },
       {
         title: "Review notes",
-        body: "Comments from a senior GMP engineer on what holds and what detailed design would still need to change.",
+        body: "Comments from a team of senior engineers specialized in GMP on what holds and what detailed design would still need to change.",
       },
     ],
     excludedTitle: "Not included",
@@ -455,7 +455,7 @@ const en: typeof es = {
       "Zoning with ISO 14644 classes and an Annex 1 reading",
       "Personnel and material flows",
       "Interactive 3D model of the recommended option",
-      "Expert review comments",
+      "Comments from the team of experts",
     ],
     assumption:
       "Didactic assumption: a filling suite. Classes, doors, and arrows do not correspond to an existing plant.",
@@ -475,7 +475,7 @@ const en: typeof es = {
       },
       {
         q: "Who reviews the options?",
-        a: "A senior GMP engineer reviews the options. AI prepares them from the brief. Delivery does not go out without that review, which can correct or discard what the AI proposes.",
+        a: "A team of senior engineers specialized in GMP reviews the options. AI prepares them from the brief. Delivery does not go out without that review, which can correct or discard what the AI proposes.",
       },
       {
         q: "Who is it for?",
@@ -537,7 +537,7 @@ const en: typeof es = {
     invalid: "The server response could not be read. Do not assume the brief was saved.",
   },
   footer: {
-    blurb: "{brand} prepares conceptual GMP layouts, with AI-assisted options and review by a senior GMP engineer.",
+    blurb: "{brand} prepares conceptual GMP layouts, with AI-assisted options and review by a team of senior engineers specialized in GMP.",
     privacy: "Privacy",
     scope: "Spain and Latin America",
   },

@@ -7,7 +7,7 @@ export function JsonLd() {
     name: "Layout conceptual GMP",
     serviceType: "Conceptual GMP facility layout",
     description:
-      "Layouts conceptuales GMP con variantes asistidas por IA, revisión experta, planos 2D y modelo 3D interactivo.",
+      "Layouts conceptuales GMP con variantes asistidas por IA, revisión de un equipo de expertos, planos 2D y modelo 3D interactivo.",
     url: siteUrl,
     provider: {
       "@type": "Organization",
