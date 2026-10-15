@@ -1,27 +1,29 @@
+import { JsonLd } from "@/components/JsonLd";
 import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/sections/Hero";
-import { SocialProof } from "@/components/sections/SocialProof";
-import { HowItWorks } from "@/components/sections/HowItWorks";
-import { Features } from "@/components/sections/Features";
-import { Showcase } from "@/components/sections/Showcase";
-import { Pricing } from "@/components/sections/Pricing";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { CTA } from "@/components/sections/CTA";
+import { BriefSection } from "@/components/sections/BriefSection";
+import { Deliverables } from "@/components/sections/Deliverables";
+import { Demo3D } from "@/components/sections/Demo3D";
+import { FAQ } from "@/components/sections/FAQ";
 import { Footer } from "@/components/sections/Footer";
+import { Hero } from "@/components/sections/Hero";
+import { HowItWorks } from "@/components/sections/HowItWorks";
+import { Problem } from "@/components/sections/Problem";
+import { SampleDeliverable } from "@/components/sections/SampleDeliverable";
 
 export default function Home() {
   return (
     <>
+      <JsonLd />
       <Navbar />
-      <main>
+      <main id="contenido">
         <Hero />
-        <SocialProof />
+        <Problem />
         <HowItWorks />
-        <Features />
-        <Showcase />
-        <Pricing />
-        <Testimonials />
-        <CTA />
+        <Deliverables />
+        <Demo3D />
+        <SampleDeliverable />
+        <FAQ />
+        <BriefSection />
       </main>
       <Footer />
     </>
